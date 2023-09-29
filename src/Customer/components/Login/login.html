@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>The Greengrocer</title>
+    </head>
+    <body>
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            function googleTranslateElementInit(){
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <div id="google_translate_element"></div>
+        <section
+            class="bg-gray-50 min-h-screen flex items-center justify-center">
+            <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
+                <div className="md:w-1/2 px-16">
+                    <h2 className="font-bold text-2xl text-[#002D74]">Login</h2>
+                    <p className="text-sm mt-4 text-[#002D74]">You already a member,
+                        easily log in</p>
+                    <form action className="flex flex-col gap-4">
+                        <input className="p-2 mt-8 rounded-xl border hover:scale-110 duration-300" type="text"
+                            name="email" placeholder="Email"/>
+                        <input className="p-2 rounded-xl border hover:scale-110 duration-300" type="password"
+                            name="password" placeholder="Password"/>
+                        <button className="bg-[#002D74] rounded-xl text-white py-2 hover:scale-105 duration-300">Login</button>
+                    </form>
+                    <div
+                        className="mt-10 grid grid-cols-3 items-center text-gray-500">
+                        <hr className="border-gray-500">
+                        <p className="text-center">OR</p>
+                        <hr className="border-gray-500"/>
+                    </div>
+                    <button
+                        className="bg-white border py-2 w-full rounded-xl mt-5 flex justify-center items-center text-sm hover:scale-105 duration-300">
+                        <img src="google.png" className="mr-3"
+                            style={{width: "25px", height: "25px"}}/> Login with
+                        Google</button>
+                    <p className="mt-5 text-xs border-b py-4 text-center">Forget your Password?</p>
+                    <hr className="border-gray-500"/>
+                    <div className="mt-3 text-xs flex justify-between items-center">
+                        <p>If you Don't have an account</p>
+                        <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300 text-[#002D74]">Register</button>
+                    </div>
+                </div>
+
+                <div className="md:block hidden w-1/2">
+                    <img className="rounded-2xl" style={{width: "auto", height: "450px"}} src="Fruits-and-Vegetables.jpg"/>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>
